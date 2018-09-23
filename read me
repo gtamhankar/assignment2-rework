@@ -1,0 +1,52 @@
+Submitted On: 09/23/2018
+
+========
+Rework notes attached: Though this is not a fully function refined product, I have tried a few more enhancements to be more responsive.
+Added nav toggles, bootstrap grid handling for different viewports and media queries. 
+--------
+
+Technologies: HTML & CSS & Bootstrap
+
+This is assignment 2: https://unc.bootcampcontent.com/UNC-Coding-Boot-Camp/UNCHILL201808FSF3/blob/master/homework/02-css-bootstrap/homework-instructions.md
+
+
+Inputs/Files: contact.html, index.html, portfolio.html, README.md 
+Css folder: main.css,  reset.css, uses bootstrap.css with web link
+Images folder: circles-light.png,  hrPayrollSystems.png, sybase.jpg, technics-q-c-640-480-9.jpg
+gnt1.jpg, mainframe.jpg,  technics-q-c-640-480-1.jpg  techsupport.jpg
+
+Outputs: Basic portfolio page with home page on "About Me", Contact page and portfolio page with project images using bootstrap and media queries.
+
+======== REWORK NOTES =====================
+Ashley has been gracious to explain the requirements and improvements that could have been done on the submitted work.. 
+HERe are a few comments:
+
+Bootstrap Portfolio:
+1) Be careful about setting the heights and widths of elements to a specific px height. I think this might be what's contributing to your overflow issue. One thing to look into is viewport height and width (https://css-tricks.com/fun-viewport-units/). You could also consider using percentages instead of px, because different people have different screen sizes, so how the px looks on one machine could be radically different on another. By using percentages, you set the width or height to something based off a percentage of the viewport size.
+2) I would remove all of the overflows on this assignment and use percentages or vw/vh to set the size of your elements.
+3) I've fixed your main content section as an example to get you started. Remove the overflow from #mainBody and #mainSection. Have the styling for main section look like this:
+```.mainSection {
+padding: 30px;
+background: #fff;
+border: 1px solid #ddd;
+align-content: center;
+max-width: 85vw;
+position: relative;
+left: 5%;}```
+4) I wouldn't use the grid system for the photo and the text. That's more helpful for the portfolio section. You also have rows with nested rows and only one col set to 4. Bootstrap is always going to want the column total to equal 12, so if you want and empty "col" space on either side, you need to look into col offsets (check out the bootstrap documentation for that). The typical layout for rows and cols should be as such:
+```<div class="row:>
+<div class="col-sm-6">CONTENT</div>
+<div class="col-sm-6">CONTENT</div>
+</div>
+<div class="row">
+<div class="col-sm-12>CONTENT></div>
+</div>```
+I think you could keep the picture and text in this portion like you had it in the first homework assignment.
+5) For the navbar on the bootstrap assignment, look into navbar-toggler and collapsed in the documentation. This will hide the navbar links behind a "hamburger menu" once the viewport reaches a certain width and expand the navbar once a user clicks on this. You'll need to add the JS and jQuery CDNs into your html to get this to work, and those can be found on the home page, under the bootstrap CSS CDN.
+
+Apply these ideas about percentage width and proper grid form to your portfolio page and fix the navbar across all of them and you're golden! It's a lot of work to do, and I'd rather you focus on the JS homework first, so do this only if you have extra time. (edited)
+
+Responsive Portfolio:
+1) You can easily apply the percentage widths and removing overflows to fix the same problems here.
+2) For your navbar at the smaller break points (starting at 640 I think), where it moves under your name, just try adding
+```text-align: center```

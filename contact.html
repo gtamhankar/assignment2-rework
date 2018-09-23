@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-us">
+
+<!-- This is contact.html which displays a contact form for user.
+    This page primarily uses HTML, CSS & bootstrap. -->
+
+<head>
+  <!-- adding style sheets and bootstrap css -->
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <!-- adding navbar components to create header and navigation menu/display -->
+  <div class="nav">
+      <span id="logo">Gouri Tamhankar</span>
+      <label id="hde" for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle"/>         
+      <div class="menu">                
+              <a href="index.html">About   </a>
+              <a href="portfolio.html">Portfolio   </a>
+              <a href="Contact.html">Contact</a>
+            </div>       
+  </div>
+
+  <div id="mainBody" > 
+    <section class="mainSection">
+    <h1 class="bodyTitle">Contact</h1>                
+    <div class="row" id="BodyText"> 
+    <form action="#" class="form-group">
+        Name: <input type="text" name="txtName" placeholder="John Smith"><br>
+        Email: <input type="text" name="txtEmail" placeholder="example@gmail.com" ><br>
+        Message: <textarea id="subject" name="subject" style="height:80px"></textarea>
+        <br>                         
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+    </section>      
+  </div>
+
+  <!-- using grid concept row layout component for footer -->
+<div class="row"> 
+  <div class="col-md-12" id="footer">Copyright@</div>
+</div>
+
+</body>
+
+</html>

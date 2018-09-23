@@ -1,0 +1,333 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: url("../images/circles-light.png");
+}
+html {
+    font-family: "helvetica neue", sans-serif;
+}
+
+.nav {
+    border-bottom: 2px solid #ccc;
+    text-align: right;
+    height: 10%;
+    line-height: 10px;
+    background: white;
+    align-content: right;
+    text-align: right;
+}
+.menu {
+    margin: 0 30px 0 0;
+    align-content: right;
+    text-align: right;
+    /* line-height: 10%; */
+}
+.menu a {
+    clear: right;
+    /* text-decoration: none; */
+    color: gray;
+    margin: 0 10px;
+    padding-top: 10px;
+    line-height: 30px;
+    align-content: right;
+    text-align: right;
+}
+
+span {
+    color: #54D17A;
+    align-content: left;
+}
+
+#hde {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+    
+#logo {
+    float: left;
+    margin-left: 50px;
+    /* width: 250px; */
+    /* width: 20%; */
+    /* margin-top: 0px; */
+    /* height: 80px;  */
+    height: 100%;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    /* font-size: 24px; */
+    font-size: calc(14px + 1vw);
+    font-weight: 200;
+    line-height: 40px;
+    /* line-height: auto;  */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+  }
+  .bodyTitle
+  {
+      text-align: left;
+      /* font-size: 20px; */
+      font-size: calc(14px + 1vw);
+      font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      padding: 20px;
+      color: teal;  
+      /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+      /* font-style: italic; */
+  }  
+
+  
+h1,
+h2,
+h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  /* font-weight: 600; */
+  font-size:8vw;
+  color: #4aaaa5;
+}
+
+h1 {
+  padding-bottom: 20px;
+  /* font-size: 30px; */
+  font-size: calc(24px + 1vw);
+  line-height: 10px;
+  border-bottom: 3px solid #ddd;
+}
+
+h2,
+h3 {
+  /* font-size: 18px; */
+  font-size: calc(12px + 1vw);
+}
+/* footer */
+
+#footer
+{    
+    position:fixed;
+    bottom:0;left:0;right:0;
+    height:5%;
+    width: 100%;   
+    text-align: center;
+    color:white;
+    background:#666666;
+    border-top: cadetblue;
+    border-top-color: teal;
+    border-top-style: solid;
+    text-align: center;
+    font-size: 8;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+#BodyText
+{
+    word-wrap: break-word;
+    padding-block-start: 20px;
+    text-align: left;
+    background-color:white;
+    color: #777777;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px; 
+    text-align: justify;
+    height: 100%;
+}
+
+#mainBody {
+    /* check how to use cal here ?? for padding top */
+    padding-top: 5%;
+    /* padding-top: calc(100vw * (5/16)); */
+    /* height: calc(50vw * (9/16)); */
+    margin-left: 50px; 
+    background: url("../images/circles-light.png");    
+  }
+  
+  .mainSection { 
+    /* padding: 30px; */
+    background: #fff;
+    border: 1px solid #ddd;
+    align-content: center;
+    max-width: 85vw;
+    position: relative;
+    left: 4%;
+  }
+  
+  
+  /* portfolio page */
+  
+  .work {
+    position: relative;
+    float: left;
+    /* width: 274px; */
+    width: 80%;
+    /* margin: 20px 0 25px; */
+    /* overflow: auto; */
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .work img {
+    width: 80%;
+    /* border: 0 none; */
+    opacity: 0.8;
+    height: 80%;
+    border: 2px solid black;
+  }
+  
+  .work h3 {
+    position: absolute;
+    bottom: 30px;
+    width: 70%;
+    padding: 3px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 50;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    background: #4aaaa5;
+    /* border-bottom: 0; */
+  }
+  
+  /* Bottom right text */
+  .text-block {
+      position: absolute;
+      background-color: teal;
+      color: white;
+      text-align: center;
+      width: 100%;
+      bottom: 90px;
+  }
+  
+  .indexImage
+  {
+      margin-top: 10px;
+      margin-right: 10px;
+      margin-left: 10px;
+      float: left;
+      width: 30%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      left: 100px;
+  }
+  
+  /* contact page */
+  
+  #contact-form ul {
+    margin-bottom: 20px;
+  }
+  
+  #contact-form li {
+    margin-bottom: 10px;
+  }
+  
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    /* font-size: 14px; */
+    font-size: calc(12px + 1vw);
+    border: 1px solid #ddd;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  #LLink
+  {
+    color: blue;
+    font-weight: 160;
+    text-align: center;
+    margin-left: 20px;
+    /* align-content: center; */
+  }
+  
+  input[type=submit] {
+    padding: 10px 30px;
+    /* font-size: 18px; */
+    font-size: calc(18px + 1vw);
+    color: #fff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
+
+
+
+@media only screen and (max-width: 500px) {
+    #hde {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        align-content: center;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        align-content: center;
+        text-align: center;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    #mainBody {
+        /* check how to use cal here ?? for padding top */
+        padding-top: 28%;
+        /* padding-top: calc(100vw * (5/16)); */
+        /* height: calc(50vw * (9/16)); */
+        margin-left: 30px;
+        width: 80%;
+      }
+      .indexImage
+      {
+          margin-top: 10px;
+          margin-right: 10px;
+          margin-left: 10px;
+          float: left;
+          width: 40%;
+          height: auto;
+          border-radius: 10px;
+          border: 2px solid #ddd;
+          left: 100px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
